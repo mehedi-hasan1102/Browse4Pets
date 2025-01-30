@@ -95,9 +95,34 @@
 
     <!-- Hero Section -->
 
-    <section class=" relative bg-cover bg-center bg-no-repeat sm:hidden md:block"
-        style="background-image: url('./images/cat-big.png')">
-        <div class="absolute inset-0 bg-black bg-opacity-0"></div>
+    <section>
+
+        
+
+
+
+
+        <div class="absolute inset-0 bg-black/0 -z-10">
+            
+            <!-- Mobile image (shows below 640px) -->
+<img
+src="./images/mobile-cat.png"
+alt="Cat"
+class="absolute -z-50 block sm:hidden bottom-0 left-1/2 transform -translate-x-1/2"
+/>
+
+
+
+            <!-- Desktop image (shows from 640px and up) -->
+            <img src="./images/cat-big.png" alt="Cat" class="w-full h-full object-cover hidden sm:block" />
+        </div>
+        <!-- <div class="absolute inset-0 bg-black/0 z-10">
+            <img
+              src="./images/cat-big.png"
+              alt="Cat"
+              class="w-full h-full object-cover hidden sm:block"
+            />
+          </div> -->
 
         <!-- Content Wrapper -->
         <div
@@ -378,41 +403,43 @@
 
     <section class="bg-yellow-200 py-10 max-w-6xl mx-auto p-6">
         <div class="max-w-4xl mx-auto bg-yellow-50 p-8 rounded-lg flex items-center gap-6 shadow-md">
-          <img src="./images/cute-dog-mid.png" alt="Cute dog in pajamas" class="w-40 h-40 object-cover rounded-lg">
-          <div>
-            <h2 class="text-xl font-bold">Get Pawsome News!</h2>
-            <p class="text-gray-600 mb-4">Exclusive training tips, tricks, product deals and more.</p>
-            <div class="flex gap-2">
-              <input type="email" placeholder="Enter email..." class="input input-bordered w-full max-w-xs">
-              <button class="btn bg-yellow-400 hover:bg-yellow-500 text-black">Subscribe</button>
+            <img src="./images/cute-dog-mid.png" alt="Cute dog in pajamas" class="w-40 h-40 object-cover rounded-lg">
+            <div>
+                <h2 class="text-xl font-bold">Get Pawsome News!</h2>
+                <p class="text-gray-600 mb-4">Exclusive training tips, tricks, product deals and more.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Enter email..." class="input input-bordered w-full max-w-xs">
+                    <button class="btn bg-yellow-400 hover:bg-yellow-500 text-black">Subscribe</button>
+                </div>
             </div>
-          </div>
         </div>
-    
-    <!-- footer  -->
-    
+
+        <!-- footer  -->
+
         <footer class="mt-10 text-gray-700 flex justify-between items-center px-10">
-          <div>
-            <p class="flex items-center font-semibold"><span class="text-2xl mr-2">🐶</span> Browse<span class="text-yellow-500">4</span>Pets</p>
-            <p class="text-sm">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
-          </div>
-          <div class="space-y-1">
-            <p class="font-medium">Find a pet</p>
-            <p class="font-medium">Breeds</p>
-            <p class="font-medium">Contact us</p>
-          </div>
-          <div>
-            <p class="font-medium mb-1">Follow Us</p>
-            <div class="flex space-x-2 text-xl">
-              <a href="#" class="hover:text-gray-900">&#xf09a;</a>
-              <a href="#" class="hover:text-gray-900">&#xf16d;</a>
-              <a href="#" class="hover:text-gray-900">&#xf0e1;</a>
-              <a href="#" class="hover:text-gray-900">&#xf167;</a>
+            <div>
+                <p class="flex items-center font-semibold"><span class="text-2xl mr-2">🐶</span> Browse<span
+                        class="text-yellow-500">4</span>Pets</p>
+                <p class="text-sm">Discover a world of treats, toys, and essentials handpicked for your furry friends.
+                </p>
             </div>
-          </div>
+            <div class="space-y-1">
+                <p class="font-medium">Find a pet</p>
+                <p class="font-medium">Breeds</p>
+                <p class="font-medium">Contact us</p>
+            </div>
+            <div>
+                <p class="font-medium mb-1">Follow Us</p>
+                <div class="flex space-x-2 text-xl">
+                    <a href="#" class="hover:text-gray-900">&#xf09a;</a>
+                    <a href="#" class="hover:text-gray-900">&#xf16d;</a>
+                    <a href="#" class="hover:text-gray-900">&#xf0e1;</a>
+                    <a href="#" class="hover:text-gray-900">&#xf167;</a>
+                </div>
+            </div>
         </footer>
     </section>
-     
+
 
 </body>
 
