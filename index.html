@@ -446,7 +446,7 @@
 
     <!-- extra section look like my mind  -->
 
-    <section class="mt-10 max-w-5xl mx-auto p-6 extra ">
+    <section class="mt-10 max-w-5xl mx-auto p-6 extra">
       <h2 class="font-adlam text-3xl font-bold mb-6">New Arrivals</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Product Card 1 -->
@@ -539,23 +539,33 @@
       .f-content {
         margin-top: 150px;
       }
+
       .extra {
-        margin-bottom: -150px;
-        
+          margin-bottom: -150px;
+        }
+
+      @media (max-width: 768px) {
+        .f-content {
+          margin-top: 250px;
+        }
+
+        .extra {
+          margin-bottom: -350px;
+        }
       }
-      
     </style>
 
+    <!-- Footer -->
     <footer class="bg-yellow-200 py-10 px-6 font-sora">
       <div
-        class="f-content max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0"
+        class="f-content max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0"
       >
         <!-- Left Section -->
-        <div class="text-center md:text-left">
+        <div class="text-left">
           <div class="flex items-center space-x-2">
-            <span class="text-2xl"
-              ><img src="./images/logo-footer.png" alt=""
-            /></span>
+            <span class="text-2xl">
+              <img src="./images/logo-footer.png" alt="" />
+            </span>
             <h2 class="text-lg font-semibold">
               Browse<span class="text-yellow-600">4</span>Pets
             </h2>
@@ -567,7 +577,7 @@
         </div>
 
         <!-- Middle Section -->
-        <div class="text-center md:text-left">
+        <div class="text-left">
           <ul class="space-y-2">
             <li>
               <a href="#" class="text-gray-800 font-medium hover:text-gray-600"
@@ -588,10 +598,9 @@
         </div>
 
         <!-- Right Section -->
-
-        <div class="text-center md:text-left">
+        <div class="text-left">
           <p class="font-semibold">Follow Us</p>
-          <div class="flex space-x-3 justify-center md:justify-start mt-2">
+          <div class="flex space-x-3 justify-start mt-2">
             <a href="#" class="text-gray-800 hover:text-gray-600"
               ><i class="fab fa-facebook"></i
             ></a>
