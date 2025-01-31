@@ -41,7 +41,7 @@
 
   <body class="bg-[white] text-text font-sora">
     <!-- Navbar -->
-    <nav class="bg-yellow-50 shadow-md">
+    <nav class="bg-[#FFF9F4] shadow-md">
       <div class="container mx-auto flex justify-between items-center p-4">
         <!-- Logo -->
         <div class="flex items-center gap-2">
@@ -410,9 +410,11 @@
     <!-- Everyday Low Price Section -->
     <section class="mt-10 max-w-5xl mx-auto p-6">
       <h2 class="font-adlam text-3xl font-bold mb-6">Everyday low Price</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Product Card 1 -->
-        <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6 rounded-2xl flex items-center">
+        <div
+          class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6 rounded-2xl flex items-center"
+        >
           <div>
             <p class="text-gray-600 text-sm mb-1">Under Price</p>
             <h3 class="font-adlam text-xl font-bold">Pet Grooming Mitt</h3>
@@ -426,7 +428,9 @@
           />
         </div>
         <!-- Product Card 2 -->
-        <div class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] p-6 rounded-2xl flex items-center">
+        <div
+          class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] p-6 rounded-2xl flex items-center"
+        >
           <div>
             <h3 class="font-adlam text-xl font-bold">T-Shirt for Dogs</h3>
             <p class="text-2xl font-bold text-yellow-600">$7.99</p>
@@ -442,10 +446,10 @@
 
     <!-- extra section look like my mind  -->
 
-    <section class="mt-10 max-w-5xl mx-auto p-6">
+    <section class="mt-10 max-w-5xl mx-auto p-6 extra ">
       <h2 class="font-adlam text-3xl font-bold mb-6">New Arrivals</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Product Card 1 (Fixed) -->
+        <!-- Product Card 1 -->
         <div class="bg-blue-100 p-6 rounded-2xl flex flex-col items-start">
           <img
             src="./images/cat-toy.png"
@@ -489,8 +493,10 @@
 
     <!-- news latter-->
 
-    <section class="py-10 max-w-5xl mx-auto p-6">
-      <div class="max-w-3xl mx-auto bg-yellow-50 p-8 rounded-lg flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-md">
+    <section class="py-10 max-w-5xl mx-auto p-6 news">
+      <div
+        class="max-w-3xl mx-auto bg-yellow-50 p-8 rounded-lg flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-md"
+      >
         <img
           src="./images/cute-dog-mid.png"
           alt="Cute dog in pajamas"
@@ -501,68 +507,106 @@
           <p class="text-gray-600 mb-4">
             Exclusive training tips, tricks, product deals and more.
           </p>
-          <div class="flex flex-col sm:flex-row gap-2 justify-center sm:justify-start">
+          <div
+            class="flex flex-col sm:flex-row gap-2 justify-center sm:justify-start"
+          >
             <input
               type="email"
               placeholder="Enter email..."
               class="input input-bordered w-full rounded-lg max-w-xs mb-2 sm:mb-0"
             />
-            <button class="px-4 py-2 bg-primary text-[#111] font-semibold rounded-lg hover:bg-opacity-80 transition text-sm sm:text-base sm:px-6 sm:py-3">
+            <button
+              class="px-4 py-2 bg-primary text-[#111] font-semibold rounded-lg hover:bg-opacity-80 transition text-sm sm:text-base sm:px-6 sm:py-3"
+            >
               Subscribe
             </button>
           </div>
         </div>
       </div>
     </section>
-    
-      <!-- footer  -->
 
+    <!-- footer  -->
 
-
-    
-
+    <style>
+      .news {
+        position: relative;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        transform: translateY(50%);
+      }
+      .f-content {
+        margin-top: 150px;
+      }
+      .extra {
+        margin-bottom: -150px;
+        
+      }
       
-      <footer class="bg-yellow-200 py-10 px-6 font-sora">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
-          
-          <!-- Left Section -->
-          <div class="text-center md:text-left">
-            <div class="flex items-center space-x-2">
-              <span class="text-2xl"><img src="./images/logo-footer.png" alt=""></span>
-              <h2 class="text-lg font-semibold">Browse<span class="text-yellow-600">4</span>Pets</h2>
-            </div>
-            <p class="text-gray-700 max-w-sm mt-2">
-              Discover a world of treats, toys, and essentials handpicked for your furry friends
-            </p>
+    </style>
+
+    <footer class="bg-yellow-200 py-10 px-6 font-sora">
+      <div
+        class="f-content max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0"
+      >
+        <!-- Left Section -->
+        <div class="text-center md:text-left">
+          <div class="flex items-center space-x-2">
+            <span class="text-2xl"
+              ><img src="./images/logo-footer.png" alt=""
+            /></span>
+            <h2 class="text-lg font-semibold">
+              Browse<span class="text-yellow-600">4</span>Pets
+            </h2>
           </div>
-      
-          <!-- Middle Section -->
-          <div class="text-center md:text-left">
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-800 font-medium hover:text-gray-600">Find a pet</a></li>
-              <li><a href="#" class="text-gray-800 font-medium hover:text-gray-600">Breeds</a></li>
-              <li><a href="#" class="text-gray-800 font-medium hover:text-gray-600">Contact us</a></li>
-            </ul>
-          </div>
-      
-          <!-- Right Section -->
+          <p class="text-gray-700 max-w-sm mt-2">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
 
-          <div class="text-center md:text-left">
-            <p class="font-semibold">Follow Us</p>
-            <div class="flex space-x-3 justify-center md:justify-start mt-2">
-              <a href="#" class="text-gray-800 hover:text-gray-600"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="text-gray-800 hover:text-gray-600"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-gray-800 hover:text-gray-600"><i class="fab fa-linkedin"></i></a>
-              <a href="#" class="text-gray-800 hover:text-gray-600"><i class="fab fa-youtube"></i></a>
-            </div>
+        <!-- Middle Section -->
+        <div class="text-center md:text-left">
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-800 font-medium hover:text-gray-600"
+                >Find a pet</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-medium hover:text-gray-600"
+                >Breeds</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-medium hover:text-gray-600"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Section -->
+
+        <div class="text-center md:text-left">
+          <p class="font-semibold">Follow Us</p>
+          <div class="flex space-x-3 justify-center md:justify-start mt-2">
+            <a href="#" class="text-gray-800 hover:text-gray-600"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-gray-800 hover:text-gray-600"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-800 hover:text-gray-600"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-gray-800 hover:text-gray-600"
+              ><i class="fab fa-youtube"></i
+            ></a>
           </div>
         </div>
-      
-      
-        
-      </footer>
-      
-      
-      
+      </div>
+    </footer>
   </body>
 </html>
